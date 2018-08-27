@@ -1,4 +1,4 @@
-<doctype <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <!-- 
@@ -6,72 +6,170 @@
          Date: 8.24.18
     -->
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Harpe Gaming</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="rtc.css">
-    <script src="index.js"></script>
-    <script src="function.php"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
 </head>
+<!-- navigation bar linked to css for styling -->
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="hg_towers.html">Towers</a></li>
-                <li><a href="hg_alliance.html">Alliance</a></li>
-            </ul>
-        </nav>
+    <header id="header">
+        <div class="inner">
+            <a href="index.html" class="logo"><strong>HARPE</strong> Gaming</a> 
+            <nav id="nav">
+                <a href="index.html">Home</a>
+                <a href="hg_alliance.html">Alliance</a>
+                <a href="hg_towers.html">Towers</a>
+            </nav>
+            <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+        </div>
     </header>
-    <hr />
-    <img src="hg_logo.png" alt="Harpe Gaming">
-   <h1> Welcome to Harpe Gaming. We have a simple philosophy. It has three main points:</h1>
-   <h2>
-       <ul>
-        <li>Unplug</li>
-        <li>Interact</li>
-        <li>Reconnect</li>
-   </ul>
-</h2>
+    <!-- background image setup -->
+    <section id="banner">
+        <div class="inner">
+            <header>
+                <h1>Welcome to Harpe Gaming. We have a simple philosophy with three main points:</h1>
+            </header>
+    <!-- this section is for the 3 images and text in the middle of the page -->
+            <div class="flex ">
 
+                <div>
+                    <span><img src="unplug.png" style="width:50px;height:50px" alt=""></span>
+                    <h3>Unplug</h3>
+                </div>
 
-<p>And that's it. We believe that the best games are the ones 
-        that bring people together through shared experiences. With 
-        all due respect to our video gamer friends, you can't always get
-        that from a computer screen. Sometimes you need the 
-        intimate approach of sitting face-to-face around 
-        a common table with the soda and chips at your elbow.</p>
+                <div>
+                    <span><img src="interact.png" style="width:50px;height:50px" alt=""></span>
+                    <h3>Interact</h3>
+                </div>
 
-<p>We are a local board and card game store located in the 
-        heart of Morgantown near the campus. We carry 
-        hundreds of games and puzzles, including educational games, family games, card games, historical 
-        simulations, role-playing games, and so much more. 
-        If you remember a great game from your youth, we 
-        probably have it in our antiques collection. If we don't, we know where we can get it.</p>
-
-<p>We're more than just a place to buy games. We celebrate 
-        gaming and the company of good friends. 
-        Our game room is free for all to us. Sit down, pick out 
-        a game from our demo library and start playing. 
-        We sponsor tournaments, challenges, and special 
-        social events. You'll always find a game to play.</p>
-
-<p>We're always on the lookout for the best new games. We 
-        publish periodic reviews of new titles. Just out 
-        our reviews of Towers and Temples and Alliance; both 
-        new this month at Harpe Gaming.</p>
-
-<h2>Questions?</h2> <h3>Contact us at:</h3>
- <address>
-        <a href="mailto:sgreer@example.com/harpe">sgreer@example.com/harpe</a><br />
-
-        or call us at:
+                <div>
+                    <span><img src="reconnect.png" style="width:50px;height:50px" alt=""></span>
+                    <h3>Reconnect</h3>
+                </div>
+            </div>
+            <!-- main content, using box class made in main.css for styling -->
+         <div class="box">
+                <p> We believe that the best games are the ones 
+                        that bring people together through shared experiences. With 
+                        all due respect to our video gamer friends, you can't always get
+                        that from a computer screen. Sometimes you need the 
+                        intimate approach of sitting face-to-face around 
+                        a common table with the soda and chips at your elbow.</p>
         
-        <a href="tel:13045557120">(304) 555-7120</a>
- </address>
- <hr />
- <footer>Harpe Gaming &#8226; 785 Chester Avenue &#8226; Morgantown, WV 26502</footer>
+        <p>We are a local board and card game store located in the 
+                heart of Morgantown near the campus. We carry 
+                hundreds of games and puzzles, including educational games, family games, card games, historical 
+                simulations, role-playing games, and so much more. 
+                If you remember a great game from your youth, we 
+                probably have it in our antiques collection. If we don't, we know where we can get it.</p>
+        
+        <p>We're more than just a place to buy games. We celebrate 
+                gaming and the company of good friends. 
+                Our game room is free for all to us. Sit down, pick out 
+                a game from our demo library and start playing. 
+                We sponsor tournaments, challenges, and special 
+                social events. You'll always find a game to play.</p>
+        
+        <p>We're always on the lookout for the best new games. We 
+                publish periodic reviews of new titles. Just out 
+                our reviews of Towers and Temples and Alliance; both 
+                new this month at Harpe Gaming.</p>
+         </div>
+    </section>
+    <!-- images and hyper links for both reviews. images are using round class for aesthetic -->
+    <section id="three" class="wrapper align-center">
+        <div class="inner">
+            <div class="flex flex-2">
+                <article>
+                    <div class="image round">
+                        <img src="alliance2.jpg" alt="Pic 01" style="width:150px;height:150px;" />
+                    </div>
+                    <header>
+                        <h3>Alliance<br /> Review</h3>
+                    </header>
+                    <footer>
+                        <a href="hg_alliance.html" class="button">Read</a>
+                    </footer>
+                </article>
+                <article>
+                    <div class="image round">
+                        <img src="towers2.jpg" alt="Pic 02" style="width:150px;height:150px;" />
+                    </div>
+                    <header>
+                        <h3>Towers and Temples<br /> Review</h3>
+                    </header>
+                    <footer>
+                        <a href="hg_towers.html" class="button">Read</a>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+                <h2><font color="#fff">HARPE<span> Gaming</span></font></h2>
+
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="hg_alliance.html">Alliance</a>
+                    ·
+                    <a href="hg_towers.html">Towers</a>
+                    ·
+                </p>
+
+                <p class="footer-company-name">HARPE Gaming &copy; 2018</p>
+            </div>
+
+            <div class="footer-center">
+
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>785 Chester Avenue</span> Morgantown, WV 26502</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p><a href="tel:13045557120">(304) 555-7120</a></p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:sgreer@example.com/harpe">sgreer@example.com/harpe</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>About Us</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                </p>
+
+                <div class="footer-icons">
+
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+
+    
+                    </div>
+
+            </div>
+
+        </footer>
+ <!-- Scripts -->
+ <script src="jquery.min.js"></script>
+ <script src="skel.min.js"></script>
+ <script src="util.js"></script>
+ <script src="main.js"></script>
 </body>
 </html>
